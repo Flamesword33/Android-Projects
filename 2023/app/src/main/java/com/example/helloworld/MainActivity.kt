@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-  Surface(color = Color) {
+  Surface(color = Color.Red) {
     Text(
       text = "Hello $name!",
       modifier = modifier
