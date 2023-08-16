@@ -32,6 +32,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     text = "Hello $name!",
     modifier = modifier
   )//Text
+  Surface(color = Color) {
+  }//Surface
 }//Greeting
 
 @Preview(showBackground = true)
