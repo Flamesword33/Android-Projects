@@ -13,31 +13,31 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.helloworld.ui.theme.HelloWorldTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            HelloWorldTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("World")
-                }
-            }
-        }
-    }
-}
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContent {
+      HelloWorldTheme {
+        // A surface container using the 'background' color from the theme
+        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+          Greeting("World")
+        }//Surface
+      }//HelloWorldTheme
+    }//setContent
+  }//onCreate
+}//MainActivity
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
-}
+  Text(
+    text = "Hello $name!",
+    modifier = modifier
+  )//Text
+}//Greeting
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    HelloWorldTheme {
-        Greeting("Nathan")
-    }
-}
+  HelloWorldTheme {
+    Greeting("Nathan")
+  }//HelloWorldTheme
+}//GreetingPreview
