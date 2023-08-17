@@ -1,0 +1,15 @@
+*.iml
+2023/Hello World/.gradle
+2023/Hello World/local.properties
+2023/Hello World/.idea/caches
+2023/Hello World/.idea/libraries
+2023/Hello World/.idea/modules.xml
+2023/Hello World/.idea/workspace.xml
+2023/Hello World/.idea/navEditor.xml
+2023/Hello World/.idea/assetWizardSettings.xml
+2023/Hello World/.DS_Store
+2023/Hello World/build
+2023/Hello World/captures
+2023/Hello World/.externalNativeBuild
+2023/Hello World/.cxx
+2023/Hello World/local.properties
