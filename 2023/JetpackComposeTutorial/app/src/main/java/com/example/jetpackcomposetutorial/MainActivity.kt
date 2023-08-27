@@ -23,11 +23,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Android")
-                }
-            }
-        }
-    }
-}
+                }//Surface
+            }//JetpackComposeTutorialTheme
+        }//setContent
+    }//onCreate
+}//ComponentActivity
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -35,12 +35,12 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
+}//Greeting
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     JetpackComposeTutorialTheme {
         Greeting("Android")
-    }
-}
+    }//JetpackComposeTutorialTheme
+}//GreetingPreview
