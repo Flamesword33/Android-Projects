@@ -37,10 +37,20 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }//Greeting
 
-@Preview(showBackground = true)
+@Preview(
+    showBackground = true,
+    showSystemUi = true)
 @Composable
 fun GreetingPreview() {
     JetpackComposeTutorialTheme {
         Greeting("Android")
     }//JetpackComposeTutorialTheme
 }//GreetingPreview
+
+@Preview(
+    showBackground = true,
+    showSystemUi = true)
+@Composable
+fun BirthdayCardPreview(){
+
+}//BirthdayCardPreview
