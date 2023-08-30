@@ -10,13 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.jetpackcomposetutorial.ui.theme.JetpackComposeTutorialTheme
+import com.example.jetpackcomposetutorial.ui.theme.HappyBirthdayTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            JetpackComposeTutorialTheme {
+            HappyBirthdayTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -41,16 +41,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     showBackground = true,
     showSystemUi = true)
 @Composable
-fun GreetingPreview() {
-    JetpackComposeTutorialTheme {
+fun BirthdayCardPreview() {
+    HappyBirthdayTheme {
         Greeting("Android")
     }//JetpackComposeTutorialTheme
 }//GreetingPreview
-
-@Preview(
-    showBackground = true,
-    showSystemUi = true)
-@Composable
-fun BirthdayCardPreview(){
-
-}//BirthdayCardPreview
