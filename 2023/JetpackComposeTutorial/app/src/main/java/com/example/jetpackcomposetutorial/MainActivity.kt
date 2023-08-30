@@ -18,9 +18,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             HappyBirthdayTheme {
                 // A surface container using the 'background' color from the theme
-                    Greeting("Android")
                 Surface(modifier = Modifier.fillMaxSize(),
                         color = MaterialTheme.colorScheme.background) {
+                    GreetingText(message = "Happy Birthday Mom!")
                 }//Surface
             }//JetpackComposeTutorialTheme
         }//setContent
@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
 }//ComponentActivity
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun GreetingText(message: String, modifier: Modifier = Modifier){
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -40,6 +40,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        Greeting("Android")
+        GreetingText(message = "Happy Birthday Mom!")
     }//JetpackComposeTutorialTheme
 }//GreetingPreview
