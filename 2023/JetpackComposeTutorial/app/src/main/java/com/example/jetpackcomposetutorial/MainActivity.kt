@@ -35,6 +35,9 @@ class MainActivity : ComponentActivity() {
 fun GreetingText(message: String,
         from: String,
         modifier: Modifier = Modifier) {
+    Column(verticalArrangement = Arrangement.Center,
+            modifier = Modifier.padding(8.dp)) {
+    }//Column
 }//GreetingText
 
 @Preview(showBackground = true,
