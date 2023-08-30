@@ -30,10 +30,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingText(message: String, modifier: Modifier = Modifier){
     Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}//Greeting
+        text = message
+    )//Text
+}//GreetingText
 
 @Preview(showBackground = true,
         showSystemUi = true)
