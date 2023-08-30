@@ -28,10 +28,10 @@ class MainActivity : ComponentActivity() {
 }//ComponentActivity
 
 @Composable
-fun GreetingText(message: String, modifier: Modifier = Modifier){
     Text(
         text = message
     )//Text
+fun GreetingText(message: String, modifier: Modifier = Modifier) {
 }//GreetingText
 
 @Preview(showBackground = true,
