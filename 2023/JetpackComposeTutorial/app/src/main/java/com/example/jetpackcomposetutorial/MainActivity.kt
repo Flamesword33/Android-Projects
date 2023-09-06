@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
   Column(verticalArrangement = Arrangement.Center, modifier = modifier.padding(8.dp)) {
-    Text(text = message, fontSize = 100.sp, lineHeight = 116.sp, textAlign = TextAlign.Center)
+    Text(text = message, fontSize = 90.sp, lineHeight = 116.sp, textAlign = TextAlign.Center)
     Text(text = from, fontSize = 36.sp,
       modifier = Modifier
         .padding(16.dp)
