@@ -13,44 +13,34 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpackcomposetutorial.ui.theme.JetpackComposeTutorialTheme
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            JetpackComposeTutorialTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }//Surface
-            }//JetpackComposeTutorialTheme
-        }//setContent
-    }//onCreate
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContent {
+      JetpackComposeTutorialTheme {
+        // A surface container using the 'background' color from the theme
+        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+          Greeting("Android")
+        }//Surface
+      }//JetpackComposeTutorialTheme
+    }//setContent
+  }//onCreate
 }//ComponentActivity
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+  Text(text = "Hello $name!", modifier = modifier)
 }//Greeting
 
-@Preview(
-    showBackground = true,
-    showSystemUi = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
-    JetpackComposeTutorialTheme {
-        Greeting("Android")
-    }//JetpackComposeTutorialTheme
+  JetpackComposeTutorialTheme {
+    Greeting("Android")
+  }//JetpackComposeTutorialTheme
 }//GreetingPreview
 
-@Preview(
-    showBackground = true,
-    showSystemUi = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun BirthdayCardPreview(){
+fun BirthdayCardPreview() {
 
 }//BirthdayCardPreview
