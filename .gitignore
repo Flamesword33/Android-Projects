@@ -134,5 +134,11 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio
-2023/JetpackComposeTutorial/.idea/codeStyles/codeStyleConfig.xml
 2023/JetpackComposeTutorial/.idea/codeStyles/Project.xml
+2023/JetpackComposeTutorial/.idea/codeStyles/codeStyleConfig.xml
+2023/Hello World/.idea/misc.xml
+2023/JetpackComposeTutorial/.idea/misc.xml
+2023/.idea/workspace.xml
+2023/.idea/vcs.xml
+2023/.idea/misc.xml
+2023/.idea/gradle.xml
