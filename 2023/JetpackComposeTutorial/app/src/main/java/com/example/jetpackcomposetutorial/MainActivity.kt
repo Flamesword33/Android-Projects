@@ -26,7 +26,8 @@ class MainActivity : ComponentActivity() {
       JetpackComposeTutorialTheme {
         // A surface container using the 'background' color from the theme
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-
+          //GreetingText(message = "Happy Birthday Dad!", from = "Love Nathan")
+          GreetingImage(message = "Happy Birthday Dad!", from = "Love Nathan")
         }//Surface
       }//JetpackComposeTutorialTheme
     }//setContent
@@ -44,12 +45,16 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
   }//Column
 }//Greeting
 
+@Composable
+fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
+}//GreetingImage
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun BirthdayCardPreview() {
   JetpackComposeTutorialTheme {
-    GreetingText(message = "Happy Birthday Mom!", from = "Love Nathan")
+    //GreetingText(message = "Happy Birthday Dad!", from = "Love Nathan")
+    GreetingImage(message = "Happy Birthday Dad!", from = "Love Nathan")
   }//JetPackComposeTutorialTheme
 
 }//BirthdayCardPreview
