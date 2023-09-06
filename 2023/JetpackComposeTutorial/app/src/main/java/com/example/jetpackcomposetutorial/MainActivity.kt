@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
       JetpackComposeTutorialTheme {
         // A surface container using the 'background' color from the theme
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-          GreetingText(message = "Happy Birthday Mom!", from = "Love Nathan")
+
         }//Surface
       }//JetpackComposeTutorialTheme
     }//setContent
