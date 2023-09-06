@@ -1,3 +1,5 @@
+//left off on chapter 4.5
+
 package com.example.jetpackcomposetutorial
 
 import android.os.Bundle
