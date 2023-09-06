@@ -55,6 +55,9 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
   Box {
     Image(painter = image, contentDescription = null, contentScale = ContentScale.Crop,
       alpha = 0.8F)
+    GreetingText(message = message, from = from, modifier = Modifier
+      .fillMaxSize()
+      .padding(8.dp))
   }//Box
 }//GreetingImage
 
